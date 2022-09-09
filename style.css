@@ -1,0 +1,175 @@
+/*Alignment Section*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Navigation Section*/
+nav
+{
+    background: white;
+    height: 80px;
+    padding: 0px 60px 0px 60px;
+    border-radius: 0px 0px 100px 100px;
+}
+.logo
+{
+    width: 70px;
+    line-height: 80px;
+    padding-top: 20px; 
+    margin-left: 100px;
+}
+nav ul
+{
+    float: right;
+    margin-right: 80px;
+}
+nav ul li
+{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+nav ul li a
+{
+    color: gray;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+a.active,a:hover
+{
+    background: #ffc200;
+    transition: .5s;
+}
+.checkbtn
+{
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 940px)
+{
+    nav ul
+    {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background: black;
+        
+        display: block;
+        text-align: center;
+    }
+    nav ul li
+    {
+        margin: 40px 0;
+    }
+}
+/*Collapase Section*/
+.container2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+.Myaccordion
+{
+    max-width: 800px;
+    padding-top: 30px;
+}
+.Myaccordion .contentBx
+{
+    position: relative;
+    margin: 20px;
+}
+.Myaccordion .contentBx .label
+{
+    position: relative;
+    padding: 10px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+.Myaccordion .contentBx .label::before
+{
+    content: '+';
+    position: absolute;
+    top: 8%;
+    right: 20px;
+    transform: translateY(-50);
+    font-size: 1.5em;
+}
+.Myaccordion .contentBx.active .label::before
+{
+    content: '-';
+}
+.Myaccordion .contentBx .content
+{
+    position: relative;
+    background: #ffc200;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.Myaccordion .contentBx.active .content
+{
+    height: 100px;
+    padding: 10px;
+}
+/*Carousel  Section*/
+.main-carousel
+{
+    padding-top: 60px;
+    padding-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.cell1, .cell2, .cell3, .cell4 
+{
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 300px;
+    height: 300px;
+    box-shadow: 20px;
+    
+}
+.cell1, .cell2, .cell3, .cell4 
+{
+    background-image: url("carousal-bg.png");
+    background-size: 300px 300px;
+}
+/*Card  Section*/
+.card-text
+{
+    font-size: 13px;
+    padding-top: 20px;
+    text-align: center;
+}
+.card-title
+{
+    font-weight: 800;
+}
+.card-button
+{
+    background-color: black;
+    color: white;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    border-radius: 5px;
+    width: 180px;
+    position: relative;
+    left: 36px;
+}
